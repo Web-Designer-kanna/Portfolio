@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body.active{
+    background-color: #000;
+}
+body.active nav{
+    color: #fff;
+}
+body.active .mode .sun-icon{
+    display: block;
+}
+body.active .mode .moon-icon{
+    display: none;
+}
+nav ul li a{
+    font-size: 15px;
+}
+body.active nav .logo span{
+    color: #fff;
+}
+#Home{
+    height: 85vh;
+}
+body.active #Home .col p{
+    color: #fff;
+}
+#Home .col .image{
+    animation: bounce 5s linear infinite alternate;
+}
+@keyframes bounce {
+    100%{transform: translateY(-15px);}
+}
+.media-icons .media{
+    color: var(--clr);
+}
+.media-icons .media:hover{
+    color: #fff;
+    background-color: var(--clr);
+}
+header nav ul.active{
+    left: 0;
+}
