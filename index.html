@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,26 +13,26 @@
     />
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="bg-blue-50 w-screen">
+  <body>
     <header>
       <nav class="flex items-center justify-between p-5">
-        <div class="logo text-blue-600 text-2xl md:text-3xl font-bold">
+        <div class="logo text-orange-500 text-2xl md:text-3xl font-bold">
           K<span class="text-xl font-medium text-black">annan</span>
         </div>
         <ul
           class="md:flex md:gap-x-10 md:relative md:left-auto md:top-auto md:w-fit md:h-fit md:flex-row md:bg-transparent absolute transition-all w-full h-screen -left-full top-0 flex justify-center items-center flex-col gap-y-5 z-10 bg-black text-white md:text-black"
         >
-          <li><a href="#" class="text-xl md:text-sm sm:font-normal">Home</a></li>
-          <li><a href="#" class="text-xl md:text-sm sm:font-normal">About</a></li>
-          <li><a href="#" class="text-xl md:text-sm sm:font-normal">Projects</a></li>
-          <li><a href="#" class="text-xl md:text-sm sm:font-normal">Skill</a></li>
-          <li><a href="#" class="text-xl md:text-sm sm:font-normal">Contact Us</a></li>
+          <li><a href="#Home" class="text-sm sm:font-normal">Home</a></li>
+          <li><a href="#About" class="text-sm sm:font-normal">About</a></li>
+          <li><a href="#" class="text-sm sm:font-normal">Projects</a></li>
+          <li><a href="#" class="text-sm sm:font-normal">Services</a></li>
+          <li><a href="#" class="text-sm sm:font-normal">Contact Us</a></li>
           <i
             class="fa fa-close absolute top-5 cursor-pointer right-10 text-3xl md:hidden"
           ></i>
         </ul>
         <div
-          class="mode md:relative fixed md:top-auto md:right-auto top-28 right-8 w-8 h-8 flex justify-center items-center bg-white rounded-full"
+          class="mode md:relative fixed md:top-auto md:right-auto top-28 right-8 w-7 h-7 flex justify-center items-center bg-white rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="text-xl h-6 hidden cursor-pointer w-5 sun-icon text-black"
+            class="text-xl h-6 hidden cursor-pointer w-4 sun-icon text-black"
           >
             <path
               stroke-linecap="round"
@@ -48,7 +48,7 @@
               d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
             />
           </svg>
-          <i class="fa fa-moon text-xl text-black moon-icon cursor-pointer"></i>
+          <i class="fa fa-moon text-sm text-black moon-icon cursor-pointer"></i>
         </div>
         <i
           class="fa-solid fa-bars block cursor-pointer text-2xl px-2 md:hidden"
@@ -56,21 +56,24 @@
       </nav>
     </header>
     <main>
+      <!-- Home -->
       <section
         id="Home"
-        class="container w-full px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse"
+        class="container w-full h-screen px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse"
       >
         <div class="col w-full md:w-3/6">
           <h3 class="text-xl font-bold">I'm</h3>
-          <h1 class="text-3xl md:text-4xl text-blue-600 font-bold my-2.5">
+          <h1 class="text-3xl md:text-4xl text-orange-500 font-bold my-2.5">
             Front End Developer
           </h1>
-          <p class="w-3/4 my-3 tracking-widest text-xs md:text-sm text-slate-700 font-normal">
+          <p
+            class="w-3/4 my-3 tracking-widest text-xs md:text-sm text-slate-700 font-normal"
+          >
             Front End Developer | Passionate About Crafting Beautiful And
             Functional Web Experiences
           </p>
           <div
-            class="btn flex items-center justify-center gap-x-2 bg-blue-600 w-36 h-9 text-white rounded"
+            class="btn flex items-center justify-center gap-x-2 bg-orange-500 w-36 h-9 text-white rounded"
           >
             <strong class="text-sm font-medium">Download CV</strong>
             <i class="fa-solid fa-file-arrow-down text-sm"></i>
@@ -102,7 +105,9 @@
             ></a>
           </div>
         </div>
-        <div class="col w-full md:w-3/6 h-full flex items-center justify-center md:justify-end">
+        <div
+          class="col w-full md:w-3/6 h-full flex items-center justify-center md:justify-end"
+        >
           <div
             class="image w-80 h-80 rounded-full overflow-hidden shadow-md bg-white transition"
           >
@@ -111,6 +116,59 @@
               alt="user-image"
               class="w-full h-full object-cover object-top"
             />
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="About" class="bg-white w-full">
+        <h1
+          class="ml-7 md:ml-14 py-5 md:py-10 font-bold text-xl md:text-3xl text-orange-500"
+        >
+          About
+        </h1>
+        <div
+          class="container mx-auto flex h-fit justify-center items-start flex-col md:flex-row gap-y-3 md:gap-x-3"
+        >
+          <div class="col w-full md:w-3/6 h-fit bg-white shadow-md p-5">
+            <h2 class="md:text-4xl text-3xl font-bold my-3 text-slate-700">
+              Web Developer
+            </h2>
+            <p
+              class="w-full tracking-widest capitalize text-justify text-xs md:text-sm text-slate-700 font-normal"
+            >
+              Enthusiastic and motivated Front End Developer with a passion for
+              creating visually appealing and user-friendly interfaces. Eager to
+              leverage skills in HTML, CSS, JavaScript, and frameworks like
+              React to contribute to dynamic web projects. Seeking opportunities
+              to apply creativity and technical expertise to deliver exceptional
+              user experiences.
+            </p>
+            <div
+              class="btn flex items-center justify-center gap-x-2 bg-orange-500 w-36 h-9 text-white rounded md:my-4 my-3"
+            >
+              <strong class="text-sm font-medium">Download CV</strong>
+              <i class="fa-solid fa-file-arrow-down text-sm"></i>
+            </div>
+          </div>
+          <div class="col w-full md:w-3/6 h-fit flex gap-3 p-6 flex-wrap">
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              HTML
+            </h2>
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              Css
+            </h2>
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              JavaScript
+            </h2>
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              Bootstrap
+            </h2>
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              tailwind Css
+            </h2>
+            <h2 class="px-5 py-2 bg-white self-start shadow-md rounded-full">
+              React js
+            </h2>
           </div>
         </div>
       </section>

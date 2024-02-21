@@ -8,10 +8,17 @@
   text-decoration: none;
   list-style: none;
 }
+body{
+    overflow-x: hidden;
+    background:linear-gradient(145deg,#efa2b4,#aef1ee);
+}
 body.active{
-    background-color: #000;
+    background:#000;
 }
 body.active nav{
+    color: #fff;
+}
+body.active nav ul li a{
     color: #fff;
 }
 body.active .mode .sun-icon{
@@ -25,9 +32,6 @@ nav ul li a{
 }
 body.active nav .logo span{
     color: #fff;
-}
-#Home{
-    height: 85vh;
 }
 body.active #Home .col p{
     color: #fff;
