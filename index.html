@@ -14,111 +14,96 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="flex items-center justify-between p-5">
-        <div class="logo text-orange-500 text-2xl md:text-3xl font-bold">
-          K<span class="text-xl font-medium text-black">annan</span>
-        </div>
-        <ul
-          class="md:flex md:gap-x-10 md:relative md:left-auto md:top-auto md:w-fit md:h-fit md:flex-row md:bg-transparent absolute transition-all w-full h-screen -left-full top-0 flex justify-center items-center flex-col gap-y-5 z-10 bg-black text-white md:text-black"
-        >
-          <li><a href="#Home" class="text-sm sm:font-normal">Home</a></li>
-          <li><a href="#About" class="text-sm sm:font-normal">About</a></li>
-          <li><a href="#Project" class="text-sm sm:font-normal">Projects</a></li>
-          <li><a href="#" class="text-sm sm:font-normal">Services</a></li>
-          <li><a href="#" class="text-sm sm:font-normal">Contact Us</a></li>
-          <i
-            class="fa fa-close absolute top-5 cursor-pointer right-10 text-3xl md:hidden"
-          ></i>
-        </ul>
-        <div
-          class="mode md:relative fixed md:top-auto md:right-auto top-28 right-8 w-7 h-7 flex justify-center items-center bg-white rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="text-xl h-6 hidden cursor-pointer w-4 sun-icon text-black"
+    <header class="w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url(assets/images/bg.jpg);">
+      <div class="home-container flex flex-col justify-between rounded-md border-2 border-white" style="height: 90vh;width: 95vw;background-color: rgba(255, 255, 255, 0.3);">
+        <nav class="flex items-center justify-between p-5">
+          <div class="logo text-orange-500 text-2xl md:text-3xl font-bold">
+            K<span class="text-xl font-medium text-black">annan</span>
+          </div>
+          <ul
+            class="md:flex md:gap-x-10 md:relative md:left-auto md:top-auto md:w-fit md:h-fit md:flex-row md:bg-transparent absolute transition-all w-full h-screen -left-full top-0 flex justify-center items-center flex-col gap-y-5 z-10 bg-black text-white md:text-black"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-            />
-          </svg>
-          <i class="fa fa-moon text-sm text-black moon-icon cursor-pointer"></i>
-        </div>
-        <i
-          class="fa-solid fa-bars block cursor-pointer text-xl md:text-2xl px-2 md:hidden"
-        ></i>
-      </nav>
+            <li><a href="#Home" class="text-sm sm:font-normal">Home</a></li>
+            <li><a href="#About" class="text-sm sm:font-normal">About</a></li>
+            <li><a href="#Project" class="text-sm sm:font-normal">Projects</a></li>
+            <li><a href="#" class="text-sm sm:font-normal">Services</a></li>
+            <li><a href="#" class="text-sm sm:font-normal">Contact Us</a></li>
+            <i
+              class="fa fa-close absolute top-5 cursor-pointer right-10 text-3xl md:hidden"
+            ></i>
+          </ul>
+          <i
+            class="fa-solid fa-bars block cursor-pointer text-xl md:text-2xl px-2 md:hidden"
+          ></i>
+        </nav>
+         <!-- Home -->
+         <section
+         id="Home"
+         class="container w-full h-full px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse"
+       >
+         <div class="col w-full md:w-3/6">
+           <h3 class="text-xl font-bold">I'm</h3>
+           <h1 class="text-3xl md:text-4xl text-orange-500 font-bold my-2.5">
+             Front End Developer
+           </h1>
+           <p
+             class="w-3/4 my-3 tracking-widest text-xs md:text-sm text-slate-700 font-normal"
+           >
+             Front End Developer | Passionate About Crafting Beautiful And
+             Functional Web Experiences
+           </p>
+           <div
+             class="btn flex items-center justify-center gap-x-2 bg-orange-500 w-36 h-9 text-white rounded"
+           >
+             <strong class="text-sm font-medium">Download CV</strong>
+             <i class="fa-solid fa-file-arrow-down text-sm"></i>
+           </div>
+           <div class="media-icons my-8 flex items-center gap-x-2">
+             <a
+               href="#"
+               class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-xl"
+               style="--clr: #3b5998;"
+               ><i class="fa-brands fa-facebook"></i>
+             </a>
+             <a
+               href="#"
+               class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+               style="--clr: #0077b5;"
+               ><i class="fa-brands fa-linkedin"></i
+             ></a>
+             <a
+               href="#"
+               class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+               style="--clr: #ee2a7b;"
+               ><i class="fa-brands fa-instagram"></i
+             ></a>
+             <a
+               href="#"
+               class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+               style="--clr: #ff0000;"
+               ><i class="fa-brands fa-youtube"></i
+             ></a>
+           </div>
+         </div>
+         <div
+           class="col w-full md:w-3/6 h-full flex items-center justify-center md:justify-end"
+         >
+           <div
+             class="image w-80 h-80 rounded-full overflow-hidden shadow-md bg-white transition"
+           >
+             <img
+               src="assets/images/user_img.png"
+               alt="user-image"
+               class="w-full h-full object-cover object-top"
+             />
+           </div>
+         </div>
+       </section>
+      </div>
+     
     </header>
     <main>
-      <!-- Home -->
-      <section
-        id="Home"
-        class="container w-full h-screen px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse"
-      >
-        <div class="col w-full md:w-3/6">
-          <h3 class="text-xl font-bold">I'm</h3>
-          <h1 class="text-3xl md:text-4xl text-orange-500 font-bold my-2.5">
-            Front End Developer
-          </h1>
-          <p
-            class="w-3/4 my-3 tracking-widest text-xs md:text-sm text-slate-700 font-normal"
-          >
-            Front End Developer | Passionate About Crafting Beautiful And
-            Functional Web Experiences
-          </p>
-          <div
-            class="btn flex items-center justify-center gap-x-2 bg-orange-500 w-36 h-9 text-white rounded"
-          >
-            <strong class="text-sm font-medium">Download CV</strong>
-            <i class="fa-solid fa-file-arrow-down text-sm"></i>
-          </div>
-          <div class="media-icons my-8 flex items-center gap-x-2">
-            <a
-              href="#"
-              class="transition hover:-translate-y-2 media w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-xl"
-              style="--clr: #3b5998"
-              ><i class="fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="#"
-              class="transition hover:-translate-y-2 media w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md"
-              style="--clr: #0077b5"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="#"
-              class="transition hover:-translate-y-2 media w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md"
-              style="--clr: #ee2a7b"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="#"
-              class="transition hover:-translate-y-2 media w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md"
-              style="--clr: #ff0000"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-        <div
-          class="col w-full md:w-3/6 h-full flex items-center justify-center md:justify-end"
-        >
-          <div
-            class="image w-80 h-80 rounded-full overflow-hidden shadow-md bg-white transition"
-          >
-            <img
-              src="assets/images/user_img.png"
-              alt="user-image"
-              class="w-full h-full object-cover object-top"
-            />
-          </div>
-        </div>
-      </section>
+     
       <!-- About -->
       <section id="About" class="bg-white w-full">
         <h1 class="ml-7 py-5 font-bold text-xl md:text-3xl text-orange-500">
@@ -187,54 +172,63 @@
 
       <section
         id="Project"
-        class="flex items-center justify-center w-full p-5 md:p-0 h-full md:h-screen"
+        class="flex items-center justify-center w-full relative p-5 md:p-0 h-full md:h-screen" style="background: linear-gradient(145deg, #efa2b4 45%, #aef1ee);"
       >
-        <div class="project-container w-11/12 h-4/5">
+        <div class="project-container w-11/12 h-4/5 rounded-lg border-2 border-white" style="background-color: rgba(255, 255, 255, 0.5);">
           <h1 class="ml-7 py-5 font-bold text-xl md:text-2xl text-orange-500">
             Projects
           </h1>
           <div
             class="container w-full md:w-11/12 h-fit md:h-5/6 grid grid-cols-1 md:grid-cols-3 grid-rows-6 md:grid-rows-2 gap-3 mx-auto px-3 py-8 md:py-0"
           >
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
-            <div class="col p-3 rounded relative">
-              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-cover rounded" />
-              <div class="w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-3 cursor-pointer">
+            <div class="col p-3 rounded relative" style="background-color: rgba(0, 0, 0, 0.1);">
+              <img src="assets/images/Hotel_img.png" alt="" class="w-full h-4/5 object-contain rounded" />
+              <div class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto">
                 View Project
               </div>
             </div>
           </div>
         </div>
+         <!-- Project Modal -->
+
+      <div class="modal w-full h-screen fixed left-0 top-0 hidden items-center justify-center z-20" style="background: linear-gradient(145deg, #efa2b4 45%, #aef1ee);">
+        <div class="modal-dialog relative w-11/12 border-2 border-white rounded-lg" style="height:90%;background-color: rgba(255, 255, 255, 0.5);">
+        </div>
+      </div>
       </section>
+
+     
+
     </main>
     <script src="src/script.js"></script>
   </body>
