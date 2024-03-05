@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -38,20 +39,24 @@
             <li>
               <a href="#Project" class="text-sm sm:font-normal">Projects</a>
             </li>
-            <li><a href="#" class="text-sm sm:font-normal">Services</a></li>
-            <li><a href="#" class="text-sm sm:font-normal">Contact Us</a></li>
+            <li>
+              <a href="#Service" class="text-sm sm:font-normal">Services</a>
+            </li>
+            <li>
+              <a href="#Contact" class="text-sm sm:font-normal">Contact Us</a>
+            </li>
             <i
               class="fa fa-close absolute top-5 cursor-pointer right-10 text-3xl md:hidden"
             ></i>
           </ul>
           <i
-            class="fa-solid fa-bars block cursor-pointer text-xl md:text-2xl px-2 md:hidden"
+            class="fa-solid fa-bars block cursor-pointer text-lg md:text-2xl px-2 md:hidden"
           ></i>
         </nav>
         <!-- Home -->
         <section
           id="Home"
-          class="container w-full h-full px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse"
+          class="container w-full h-full px-10 flex items-center justify-center md:justify-between md:flex-row flex-col-reverse mx-auto"
         >
           <div class="col w-full md:w-3/6">
             <h3 class="text-xl font-bold">I'm</h3>
@@ -132,7 +137,7 @@
             About
           </h1>
           <div
-            class="container mx-auto flex justify-center pt-10 flex-col md:flex-row gap-y-3 md:gap-x-3"
+            class="container mx-auto flex justify-center pt-10 flex-col items-center md:flex-row gap-y-3 md:gap-x-3"
           >
             <div class="col w-full md:w-3/6 h-fit p-5">
               <h2 class="md:text-4xl text-3xl font-bold my-3 text-slate-700">
@@ -162,7 +167,7 @@
                 <img
                   src="assets/images/html.png"
                   alt="HTML icon"
-                  class="w-16 md:w-20"
+                  class="w-16"
                 />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
@@ -171,11 +176,7 @@
                 </h2>
               </div>
               <div class="flex flex-col gap-y-2 justify-center items-center">
-                <img
-                  src="assets/images/Css.png"
-                  alt="css icon"
-                  class="w-16 md:w-20"
-                />
+                <img src="assets/images/Css.png" alt="css icon" class="w-16" />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
                 >
@@ -183,11 +184,7 @@
                 </h2>
               </div>
               <div class="flex flex-col gap-y-2 justify-center items-center">
-                <img
-                  src="assets/images/js.png"
-                  alt="js icon"
-                  class="w-16 md:w-20"
-                />
+                <img src="assets/images/js.png" alt="js icon" class="w-16" />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
                 >
@@ -198,7 +195,7 @@
                 <img
                   src="assets/images/bootstrap.png"
                   alt="Bootstrap icon"
-                  class="w-16 md:w-20"
+                  class="w-16"
                 />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
@@ -210,7 +207,7 @@
                 <img
                   src="assets/images/tailwind.png"
                   alt="Tailwind icon"
-                  class="w-16 md:w-20"
+                  class="w-16"
                 />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
@@ -222,7 +219,7 @@
                 <img
                   src="assets/images/react.png"
                   alt="react icon"
-                  class="w-16 md:w-20"
+                  class="w-16"
                 />
                 <h2
                   class="px-5 py-2 text-sm hover:bg-orange-500 hover:text-white cursor-pointer transition-all bg-white shadow-md rounded-full"
@@ -239,109 +236,87 @@
 
       <section
         id="Project"
-        class="w-full relative p-5 h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        class="w-full relative p-5 h-fit md:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
         style="background-image: url(assets/images/bg.jpg)"
       >
         <div
-          class="project-container rounded-md border-2 border-white h-fit"
-          style="
-          height: 90vh;
-          width: 95vw;
-          background-color: rgba(255, 255, 255, 0.3);
-        "
+          class="project-container rounded-md border-2 border-white h-fit md:h-[95vh] w-[95vw]"
+          style="background-color: rgba(255, 255, 255, 0.3)"
         >
           <h1 class="ml-7 py-5 font-bold text-xl md:text-2xl text-orange-500">
             Projects
           </h1>
           <div
-            class="container w-full h-full grid grid-cols-2 md:grid-cols-3 grid-rows-6 md:grid-rows-2 gap-3 mx-auto px-3 py-8 md:py-0"
+            class="container w-fit h-fit grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-3 mx-auto px-3 py-8 md:py-0"
           >
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
             </div>
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
             </div>
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
             </div>
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
             </div>
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
             </div>
-            <div
-              class="col p-3 rounded relative"
-              style="background-color: rgba(0, 0, 0, 0.1)"
-            >
+            <div class="col p-3 rounded-md relative bg-white">
               <img
                 src="assets/images/Hotel_img.png"
                 alt=""
-                class="w-full h-4/5 object-contain rounded"
+                class="w-full h-4/5 object-contain rounded-md"
               />
               <div
-                class="btn w-32 text-center h-8 text-sm text-slate-700 leading-8 rounded-full mt-2 cursor-pointer mx-0 md:mx-auto"
+                class="btn w-32 bg-orange-500 text-center h-8 text-sm text-white leading-8 rounded-full mt-4 md:mt-2 cursor-pointer mx-4 md:mx-auto"
               >
                 View Project
               </div>
@@ -360,6 +335,190 @@
           ></div>
         </div>
       </section>
+      <!-- Service -->
+
+      <section
+        id="Service"
+        class="w-full relative p-5 h-fit md:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        style="background-image: url(assets/images/bg.jpg)"
+      >
+        <div
+          class="service-container rounded-md border-2 border-white h-fit md:h-[93vh] w-[95vw]"
+          style="background-color: rgba(255, 255, 255, 0.3)"
+        >
+          <h1 class="ml-7 py-5 font-bold text-xl md:text-2xl text-orange-500">
+            Services
+          </h1>
+          <div
+            class="container w-fit h-fit grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-1 gap-4 mx-auto px-3 py-8 md:py-0 md:pt-16"
+          >
+            <div
+              class="col p-5 rounded-md bg-white md:flex md:flex-col md:items-center"
+            >
+              <i
+                class="fa-solid fa-paintbrush md:text-2xl text-xl w-12 md:w-14 h-12 md:h-14 text-center flex justify-center items-center rounded-full text-white bg-orange-500"
+              ></i>
+              <h1 class="my-3 text-base md:text-xl font-bold">Web Design</h1>
+              <p
+                class="text-justify text-sm capitalize tracking-wider text-slate-700"
+              >
+                User interface design,responsive layouts for various devices,
+                typography choices, intuitive navigation, and accessibility
+                considerations.Effective web design aims to engage users ,
+                provide a seamless browsing experience,and optimize performance
+                for search engines
+              </p>
+              <div
+                class="px-2 md:px-3 md:py-2 py-1 text-sm bg-orange-500 text-white inline-block mt-3 rounded-sm cursor-pointer"
+              >
+                Load More
+              </div>
+            </div>
+            <div
+              class="col p-5 rounded-md bg-white md:flex md:flex-col md:items-center"
+            >
+              <i
+                class="fa-solid fa-desktop md:text-2xl text-xl w-12 md:w-14 h-12 md:h-14 text-center flex justify-center items-center rounded-full text-white bg-orange-500"
+              ></i>
+              <h1 class="my-3 text-base md:text-xl font-bold">
+                Web Development
+              </h1>
+              <p
+                class="text-justify text-sm capitalize tracking-wider text-slate-700"
+              >
+                Proficient in HTML,CSS and JavaScript, with expertise in
+                front-end frameworks such as React.js skilled in translating
+                design concepts into functional user interfaces while optimizing
+                for performance and accessibility. strong collabrator with a
+                passion for creating seamless user experiences
+              </p>
+              <div
+                class="px-2 md:px-3 md:py-2 py-1 text-sm bg-orange-500 text-white inline-block mt-3 rounded-sm cursor-pointer"
+              >
+                Load More
+              </div>
+            </div>
+            <div
+              class="col p-5 rounded-md bg-white md:flex md:flex-col md:items-center"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass md:text-2xl text-xl w-12 md:w-14 h-12 md:h-14 text-center flex justify-center items-center rounded-full text-white bg-orange-500"
+              ></i>
+              <h1 class="my-3 text-base md:text-xl font-bold">SEO</h1>
+              <p
+                class="text-justify text-sm capitalize tracking-wider text-slate-700"
+              >
+                Websites for improved search engine visibility and organic
+                traffic growth. Proficient in on-page and off-page SEO
+                techniques,keyword research, and analysis.skilled in utilizing
+                analytics tools to track and measure SEO performance and make
+                data-driven decisions. strong communicator and collaborator with
+                a track record of delivering tangible results
+              </p>
+              <div
+                class="px-2 md:px-3 md:py-2 py-1 text-sm bg-orange-500 text-white inline-block mt-3 rounded-sm cursor-pointer"
+              >
+                Load More
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- Contact -->
+
+       <section
+        id="Contact"
+        class="w-full relative p-5 h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        style="background-image: url(assets/images/bg.jpg)"
+      >
+        <div
+          class="contact-container rounded-md border-2 border-white h-full md:h-[93vh] w-[95vw]"
+          style="background-color: rgba(255, 255, 255, 0.3)"
+        >
+          <h1 class="ml-7 py-5 font-bold text-xl md:text-2xl text-orange-500">
+            Contact Us
+          </h1>
+          <div
+            class="container w-full h-fit flex md:w-full md:h-96 flex-col md:flex-row gap-4 mx-auto md:mt-16 pt-16 md:pt-0 md:px-6"
+          >
+            <div class="col w-full md:w-1/2 flex flex-col gap-y-3">
+              <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-user text-orange-500"></i>
+                <strong class="text-slate-700">Kannan</strong>
+              </div>
+              <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-desktop text-orange-500"></i>
+                <strong class="text-slate-700"
+                  >Web Designer & Front-end Developer</strong
+                >
+              </div>
+              <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-envelope text-orange-500"></i>
+                <strong class="text-slate-700">developer9344@gmail.com</strong>
+              </div>
+              <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-phone text-orange-500"></i>
+                <strong class="text-slate-700">9344026173</strong>
+              </div>
+              <div class="flex gap-x-3">
+                <i class="fa-solid fa-location-dot text-orange-500"></i>
+                <strong class="text-slate-700"
+                  >189/1,Main Road,Savalaikarankulam,
+                  <br />Kovilammalpuram(post),Kalakad-627501,<br />Tirunelveli</strong
+                >
+              </div>
+              <div class="media-icons mt-3 flex items-center gap-x-2">
+                <a
+                  href="#"
+                  class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-xl"
+                  style="--clr: #3b5998"
+                  ><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+                  style="--clr: #0077b5"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+                  style="--clr: #ee2a7b"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="transition media w-9 h-9 flex items-center justify-center rounded-md bg-white shadow-md"
+                  style="--clr: #ff0000"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col md:w-1/2 w-full flex flex-col gap-3 pt-8">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="h-11 border border-slate-200 px-3 rounded-md placeholder:text-sm"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="h-11 border border-slate-200 px-3 rounded-md placeholder:text-sm"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="h-11 border border-slate-200 px-3 rounded-md placeholder:text-sm"
+              />
+              <textarea
+                class="h-28 p-3 border resize-none border-slate-200 rounded-md placeholder:text-sm"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </section> 
     </main>
     <script src="src/script.js"></script>
   </body>
